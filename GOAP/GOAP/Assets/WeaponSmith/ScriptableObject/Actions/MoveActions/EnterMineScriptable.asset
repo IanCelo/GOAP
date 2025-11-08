@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda8602f66396b44ea377a45f2f92299, type: 3}
+  m_Name: EnterMineScriptable
+  m_EditorClassIdentifier: 
+  Preconditions:
+    StateList:
+    - Name: IsInMine_False
+      KeyScriptable: {fileID: 11400000, guid: 0de222e24f5593340a4ec18cb91539d4, type: 2}
+      Value: 0
+  Result:
+    StateList:
+    - Name: IsInForest_False
+      KeyScriptable: {fileID: 11400000, guid: d7e4c55cd665c7f46b79a6218052cb02, type: 2}
+      Value: 0
+    - Name: IsInMine_True
+      KeyScriptable: {fileID: 11400000, guid: 0de222e24f5593340a4ec18cb91539d4, type: 2}
+      Value: 1
+    - Name: IsNearCutter_False
+      KeyScriptable: {fileID: 11400000, guid: 9636997271f325c4f91463202ad799cd, type: 2}
+      Value: 0
+    - Name: IsNearOutput_False
+      KeyScriptable: {fileID: 11400000, guid: 1fd2663e2abed4b4590aed593a701517, type: 2}
+      Value: 0
+    - Name: IsNearShop_False
+      KeyScriptable: {fileID: 11400000, guid: b1bdb91efade8464a914698321ccb283, type: 2}
+      Value: 0
+    - Name: IsNearSmelter_False
+      KeyScriptable: {fileID: 11400000, guid: b4529616867b33849b6ee45486fd2723, type: 2}
+      Value: 0
+    - Name: IsNearStocks_False
+      KeyScriptable: {fileID: 11400000, guid: f97d878aa4461cf4ea77d83b59c95f07, type: 2}
+      Value: 0
+    - Name: IsNearToolRack_False
+      KeyScriptable: {fileID: 11400000, guid: 2d2e0d11332910a49a160f262139c98d, type: 2}
+      Value: 0
+  Cost: 2
+  IsMoveAction: 1
+  Duration: 0

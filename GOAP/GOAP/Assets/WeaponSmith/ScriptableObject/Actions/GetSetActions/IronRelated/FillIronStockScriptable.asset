@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef52f2eb447b19a4a9fe26230217af2b, type: 3}
+  m_Name: FillIronStockScriptable
+  m_EditorClassIdentifier: 
+  Preconditions:
+    StateList:
+    - Name: IsNearStocks_True
+      KeyScriptable: {fileID: 11400000, guid: f97d878aa4461cf4ea77d83b59c95f07, type: 2}
+      Value: 1
+    - Name: HasIron_True
+      KeyScriptable: {fileID: 11400000, guid: 71b15a8fca79701479660538a718ea99, type: 2}
+      Value: 1
+  Result:
+    StateList:
+    - Name: HasIron_False
+      KeyScriptable: {fileID: 11400000, guid: 71b15a8fca79701479660538a718ea99, type: 2}
+      Value: 0
+    - Name: IsIronInStock_True
+      KeyScriptable: {fileID: 11400000, guid: 5c2d4840817a97f4d8b206738f205581, type: 2}
+      Value: 1
+    - Name: IsFillingIronStock_True
+      KeyScriptable: {fileID: 11400000, guid: dc54a066f9b4cff4791c0edc94845763, type: 2}
+      Value: 1
+  Cost: 2
+  IsMoveAction: 0
+  Duration: 1.5

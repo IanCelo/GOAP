@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ac1d5f7c542584ea2df63a91cfbb19, type: 3}
+  m_Name: EmptyOutputScriptable
+  m_EditorClassIdentifier: 
+  Preconditions:
+    StateList:
+    - Name: IsNearOutput_True
+      KeyScriptable: {fileID: 11400000, guid: 1fd2663e2abed4b4590aed593a701517, type: 2}
+      Value: 1
+    - Name: IsOutputFull_True
+      KeyScriptable: {fileID: 11400000, guid: b728cb18334ffa24286a860e09d2b373, type: 2}
+      Value: 1
+    - Name: HasWood_False
+      KeyScriptable: {fileID: 11400000, guid: 7329aefbe8460014f8cf467d3cc67d58, type: 2}
+      Value: 0
+    - Name: HasIron_False
+      KeyScriptable: {fileID: 11400000, guid: 71b15a8fca79701479660538a718ea99, type: 2}
+      Value: 0
+  Result:
+    StateList:
+    - Name: IsOutputFull_False
+      KeyScriptable: {fileID: 11400000, guid: b728cb18334ffa24286a860e09d2b373, type: 2}
+      Value: 0
+    - Name: HasWeapons_True
+      KeyScriptable: {fileID: 11400000, guid: a5530d07f4889534c9cf5aa465c53140, type: 2}
+      Value: 1
+  Cost: 0
+  IsMoveAction: 0
+  Duration: 2
